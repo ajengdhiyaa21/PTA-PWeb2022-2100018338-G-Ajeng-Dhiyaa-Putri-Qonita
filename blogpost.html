@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+    crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed|Roboto+Slab" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>HTML Dan JavaScript</title>
+</head>
+
+<body>
+  <div id="slideout-menu">
+      <ul>
+          <li>
+              <a href="index.html">Home</a>
+          </li>
+          <li>
+              <a  href="blogslist.html">Blog</a>
+          </li>
+          <li>
+              <a href="about.html">About</a>
+          </li>
+          <li>
+              <input type="text" placeholder="Search Here">
+          </li>
+      </ul>
+  </div>
+
+  <nav>
+      <div id="logo-img">
+          Projek Tugas Akhir <br>Pemrograman Web
+      </div>
+      <div id="menu-icon">
+          <i class="fas fa-bars"></i>
+      </div>
+      <ul>
+          <li>
+              <a href="index.html">Home</a>
+          </li>
+          <li>
+              <a class="active" href="blogslist.html">Blog</a>
+          </li>
+          <li>
+              <a href="about.html">About</a>
+          </li>
+          <li>
+              <div id="search-icon">
+                  <i class="fas fa-search"></i>
+              </div>
+          </li>
+      </ul>
+  </nav>
+
+  <div id="searchbox">
+      <input type="text" placeholder="Search Here">
+  </div>
+
+  <main>
+
+    <h2 class="page-heading">HTML Dan JavaScript</h2>
+    <div id="post-container">
+      <section id="blogpost">
+        <div class="card">
+          <div class="card-meta-blogpost">
+            Posted by Admin on 22/07/2022
+          </div>
+          <div class="card-image">
+            <img src="img/6.jpg" alt="Card Image">
+          </div>
+          <div class="card-description">
+            <h2 id="html">HTML</h2>
+            <p>HTML merupakan suatu bahasa yang digunakan
+                untuk mendeskripsikan web pages.</p>
+
+            <h3 id="html1">1. Sintaks HTML</h3>
+            <p>
+                HTML elemen diawali dengan awal tag < .. > dan
+                diakhiri dengan akhir tag < / .. >. Isi elemen
+                adalah semua yang berada diantara awal tag dan akhir.
+                Skema dasar HTML, yaitu : <br>
+                < html > <br>
+                < head > <br>
+                < title > Judul Dokumen< /title ><br>
+                < /head ><br>
+                < body >Isi Dokumen< /body ><br>
+                < /html >
+            </p>
+            <h3 id="html2">2. Tag Dan Properti HTML</h3>
+            <p>
+                - Tag Paragraf = untuk menandai suatu paragraf <br>
+                < p >paragraf< /p ><br><br>
+                - Tag Atribut (bold, italic, underline) <br>
+                < b >cetak tebal< /b ><br>
+                < i >cetak miring< /i ><br>
+                < u >garis bawah< /u ><br><br>
+                - Tag Ganti Baris (Break Row) <br>
+                < br >< /br ><br><br>
+                - Tag Enumerasi = untuk menandai suatu item daftar <br>
+                < li >item< /li ><br><br>
+                - Tag Gambar = untuk menampilkan sebuah file gambar <br>
+                < img src="namafilegambar" alt="" ><br><br>
+                - Tag Link <br>
+                < a href="link">< /a ><br><br>
+                - Tag Tabel = untuk mendefinisikan sebuah tabel<br>
+                < table >< /table >
+            </p>
+            <h3 id="html3">3. Frame Dan Form</h3>
+            <p>
+                - Frame berfungsi untuk membagi beberapa tampilan yyang berbeda
+                dalam satu jendela browser. <br>
+                Sintaks Tag Frame = < frame >< /frame ><br><br>
+                - Form digunakan untuk memperoleh data-data user baik nama, alamat
+                dan data lainnya untuk mendaftar pada service yang disediakan. <br>
+                Sintaks Form = < Form >< /Form >
+            </p>
+
+            <h2 id="js">JavaScript</h2>
+            <h3 id="js1">1. Sintaks JavaScript</h3>
+            <p>Peletakan JavaScript di HTML dengan tag < scrip t languange="JavaScript">< /scrip t ></p>
+            <h3 id="js2">2. Variabel JavaScript</h3>
+            <p>Variabel adalah suatu obyek yang berisi data data, yang mana dapat
+                dimodifikasi selama pengeksekusian. Mendeklarasikan variabel eksplisit dengan
+                menuliskan kata kunci var kemudian diikuti dengan nama variabel dan nilai
+                dari variabel, mendeklarasikan variabel implisit dengan menuliskan
+                secara langsung nama dari variabel dan diikuti nilai dari variabel.
+            </p>
+            <h3 id="js3">3. Tipe Data JavaScript</h3>
+            <p>
+                - Integral (Bilangan Bulat) <br>- Float (Bilangan desimal)<br>- String (Kumpulan dari karakter)
+            </p>
+            <h3 id="js4">4. Operator JavaScript</h3>
+            <p>
+                - Modulus (%) <br>- Penaikan (++) <br>- Penurunan (--)
+            </p>
+            </div>
+        </div>
+
+        <div id="comments-section">
+            Comments Section <br><br>
+            <form method="post" action="" >
+              Name &nbsp; &emsp; &ensp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; : <input type="text" name="name">
+              <br><br>
+              Apakah Anda Menyukai Konten Ini :
+              <input type="radio" name="radio" value="Suka" checked/> Suka
+              <input type="radio" name="radio" value="Tidak"> Tidak
+              <br><br>
+              Jenis Kelamin &nbsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &ensp; :
+              <select name="jk" size="1">
+                  <option value="Perempuan"> Perempuan</option>
+                  <option value="Laki-Laki"> Laki-Laki</option>
+              </select>
+              <br><br>
+              E-mail &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;: <input type="text" name="email">
+              <br><br>
+              Comment &ensp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; : <textarea name="komen" id="" cols="30" rows="10"></textarea>
+              <br><br>
+              <input type="submit" name="Submit" value="Submit">
+              <input type="submit" name="reset" value="Reset">
+          </form>
+          </div>
+      </section>
+
+      <aside id="sidebar">
+        <h3><a href="#html">HTML</a></h3>
+        <h4><a href="#html1">- Sintaks HTML</a></h4>
+        <h4><a href="#html2">- Tag Dan Properti HTML</a></h4>
+        <h4><a href="#html3">- Frame Dan Form</a></h4>
+        <hr>
+        <h3><a href="#js">JavaScript</a></h3>
+        <h4><a href="#js1">- Sintaks JavaScript</a></h4>
+        <h4><a href="#js2">- Variabel JavaScript</a></h4>
+        <h4><a href="#js3">- Tipe Data JavaScript</a></h4>
+        <h4><a href="#js4">- Operator JavaScript</a></h4>
+
+      </aside>
+    </div>
+
+    <footer>
+        <div id="left-footer">
+            <h3>More To Explore</h3>
+            <p>
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="blogslist.html">Blogs</a>
+                    </li>
+                    <li>
+                        <a href="mailto:ajengdpq@gmail.com">Contact</a>
+                    </li>
+                </ul>
+            </p>
+        </div>
+
+        <div id="right-footer">
+            <h3>Connect With Us</h3>
+            <div id="social-media-footer">
+                <ul>
+                    <li>
+                        <a href="https://gitlab.com/Ajengdhiyaa21">
+                            <i class="fab fa-gitlab"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/ajengdhiyaa21">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <p>&copy;2022 | Ajeng Dhiyaa Putri Qonita</p>
+        </div>
+    </footer>
+
+  </main>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
